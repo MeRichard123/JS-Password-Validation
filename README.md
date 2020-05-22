@@ -1,1 +1,1 @@
-"# JS-Password-Validation" 
+# JS-Password-Validation
