@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background: url("./img/bg.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .title {
+    margin-bottom: 30px;
+    color: white;
+    font-size: 3rem;
+  }
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    .login__profile {
+      &__image {
+        height: 15vh;
+      }
+      padding: 1.5rem;
+      margin: 50px;
+      border-radius: 50%;
+      background: #4c22a2;
+    }
+    .login__input {
+      border-radius: 100vh;
+      border: 1px soild lightgray;
+      border-style: solid;
+      padding: 10px;
+      margin-bottom: 25px;
+    }
+    .message {
+      font-size: 1rem;
+      color: #e84118;
+      margin: 4px 0;
+    }
+    progress[value] {
+      align-self: center;
+      width: 200px;
+      border-radius: 100vh;
+      margin: 3px 0;
+      appearance: none;
+      overflow: hidden;
+    }
+    progress::-moz-progress-bar {
+      background-color: #4cd137;
+    }
+  }
+}
+
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid;
+    color: #3498db;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: loader 1.2s linear infinite;
+  }
+}
+.credits {
+  color: white;
+  margin-top: 20px;
+  a {
+    color: white;
+  }
+}
+@keyframes loader {
+  25% {
+    color: #2ecc71;
+  }
+  50% {
+    color: #f1c40f;
+  }
+  75% {
+    color: #e74c3c;
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Password Validator</title>
+  </head>
+  <body class="container">
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+
+    <h1 class="title">Login</h1>
+    <div class="login-container">
+      <div class="login__profile">
+        <img src="./img/user.svg" alt="" class="login__profile__image" />
+      </div>
+      <form action="" data-form>
+        <input type="password" class="login__input" />
+      </form>
+      <label for="chars" data-chars class="message"
+        >Contains 6 Characters</label
+      >
+      <progress id="chars" value="0" max="6"></progress>
+      <h3 class="message" data-case>Uppercase & Lowercase</h3>
+      <h3 class="message" data-numbers>Contains Numbers</h3>
+      <h3 class="message" data-special>Special Characters</h3>
+    </div>
+  </body>
+  <footer>
+    <div class="credits">
+      Icons made by
+      <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
+  </footer>
+  <script src="./app.js"></script>
+</html>
